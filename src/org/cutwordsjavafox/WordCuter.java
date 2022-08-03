@@ -14,16 +14,16 @@ public class WordCuter {
 
 		for (int i = 0; i < words.size(); i++) {
 			List<String> letters = new ArrayList<>();
-			letters.add(words[i]);
+			letters.add(words.get(i));
 
 			for (int j = 0; j < letters.size(); j++) {
-				recoverSource.append(letters[j]);
+				recoverSource.append(letters.get(j));
 			}
 
 			recoverSource.append(" ");
 
 			System.out.println(recoverSource);
-			System.out.println("There are " + letters.length + " letters in the word: " + "\"" + words[i] + "\"");
+			System.out.println("There are " + letters.size() + " letters in the word: " + "\"" + words.get(i) + "\"");
 
 		}
 
